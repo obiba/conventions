@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <inspections version="1.0" is_locked="false">
   <option name="myName" value="Project Default" />
-  <option name="myLocal" value="true" />
+  <option name="myLocal" value="false" />
   <inspection_tool class="AnonymousClassComplexity" enabled="true" level="WARNING" enabled_by_default="true">
     <option name="m_limit" value="10" />
   </inspection_tool>
   <inspection_tool class="AnonymousClassMethodCount" enabled="true" level="WARNING" enabled_by_default="true">
-    <option name="m_limit" value="3" />
+    <option name="m_limit" value="6" />
   </inspection_tool>
   <inspection_tool class="AssignmentToCatchBlockParameter" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="AssignmentToDateFieldFromParameter" enabled="true" level="WARNING" enabled_by_default="true">
@@ -34,12 +34,12 @@
   </inspection_tool>
   <inspection_tool class="ClassInTopLevelPackage" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="ClassInheritanceDepth" enabled="true" level="WARNING" enabled_by_default="true">
-    <option name="m_limit" value="2" />
+    <option name="m_limit" value="5" />
   </inspection_tool>
   <inspection_tool class="ClassMayBeInterface" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="ClassNameDiffersFromFileName" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="ClassNestingDepth" enabled="true" level="WARNING" enabled_by_default="true">
-    <option name="m_limit" value="3" />
+    <option name="m_limit" value="5" />
   </inspection_tool>
   <inspection_tool class="ClassReferencesSubclass" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="CollectionsFieldAccessReplaceableByMethodCall" enabled="true" level="WARNING" enabled_by_default="true" />
@@ -75,6 +75,9 @@
   </inspection_tool>
   <inspection_tool class="FieldMayBeFinal" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="FinalMethodInFinalClass" enabled="true" level="WARNING" enabled_by_default="true" />
+  <inspection_tool class="GroovyMethodParameterCount" enabled="true" level="WARNING" enabled_by_default="true">
+    <option name="m_limit" value="7" />
+  </inspection_tool>
   <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
     <option name="myValues">
       <value>
@@ -87,6 +90,9 @@
   </inspection_tool>
   <inspection_tool class="IfMayBeConditional" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="IfStatementWithIdenticalBranches" enabled="true" level="WARNING" enabled_by_default="true" />
+  <inspection_tool class="IfStatementWithTooManyBranches" enabled="true" level="WARNING" enabled_by_default="true">
+    <option name="m_limit" value="3" />
+  </inspection_tool>
   <inspection_tool class="InnerClassMayBeStatic" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="InstanceofChain" enabled="true" level="WARNING" enabled_by_default="true">
     <option name="ignoreInstanceofOnLibraryClasses" value="false" />
@@ -124,6 +130,8 @@
     <option name="myAdditionalJavadocTags" value="" />
   </inspection_tool>
   <inspection_tool class="JavadocReference" enabled="false" level="ERROR" enabled_by_default="false" />
+  <inspection_tool class="JpaQlInspection" enabled="false" level="ERROR" enabled_by_default="false" />
+  <inspection_tool class="JpaQueryApiInspection" enabled="false" level="ERROR" enabled_by_default="false" />
   <inspection_tool class="ListIndexOfReplaceableByContains" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="ListenerMayUseAdapter" enabled="true" level="WARNING" enabled_by_default="true">
     <option name="checkForEmptyMethods" value="true" />
@@ -162,7 +170,7 @@
     <option name="m_ignoreNegatedNullComparison" value="true" />
   </inspection_tool>
   <inspection_tool class="NestingDepth" enabled="true" level="WARNING" enabled_by_default="true">
-    <option name="m_limit" value="3" />
+    <option name="m_limit" value="5" />
   </inspection_tool>
   <inspection_tool class="NonCommentSourceStatements" enabled="true" level="WARNING" enabled_by_default="true">
     <option name="m_limit" value="20" />
@@ -192,11 +200,18 @@
     <option name="m_ignoreForPropertySetters" value="true" />
     <option name="m_ignoreForAbstractMethods" value="false" />
   </inspection_tool>
+  <inspection_tool class="ParameterNameDiffersFromOverriddenParameter" enabled="true" level="WARNING" enabled_by_default="true">
+    <option name="m_ignoreSingleCharacterNames" value="false" />
+    <option name="m_ignoreOverridesOfLibraryMethods" value="false" />
+  </inspection_tool>
   <inspection_tool class="ParametersPerConstructor" enabled="true" level="WARNING" enabled_by_default="true">
     <option name="m_limit" value="7" />
   </inspection_tool>
   <inspection_tool class="ParametersPerMethod" enabled="true" level="WARNING" enabled_by_default="true">
     <option name="m_limit" value="7" />
+  </inspection_tool>
+  <inspection_tool class="PointlessBooleanExpression" enabled="false" level="WARNING" enabled_by_default="false">
+    <option name="m_ignoreExpressionsContainingConstants" value="false" />
   </inspection_tool>
   <inspection_tool class="PointlessIndexOfComparison" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="PointlessNullCheck" enabled="true" level="WARNING" enabled_by_default="true" />
