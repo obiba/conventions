@@ -1,5 +1,17 @@
 # Copy IDE config files 
 
+intellij_codestyles_dir=intellij/codestyles
+intellij_inspection_dir=intellij/inspectionProfiles
+intellij_copyright_dir=intellij/copyright
+
+intellij_codestyles_home=~/.IntelliJIdea11/config/codestyles
+intellij_inspection_home=~/.IntelliJIdea11/config/inspection
+
+project_codestyles_dir=${p}/.idea/codestyles
+project_inspection_dir=${p}/.idea/inspectionProfiles
+project_copyright_dir=${p}/.idea/copyright
+
+
 all: help
 
 help:
@@ -16,15 +28,15 @@ help:
 
 
 import-to-intellij:
-	cp intellij/codestyles/* ~/.IntelliJIdea11/config/codestyles && \
-	cp intellij/inspection/* ~/.IntelliJIdea11/config/inspection
+	cp $(intellij_codestyles_dir)/* $(intellij_codestyles_home) && \
+	cp $(intellij_inspection_dir)/* $(intellij_inspection_home)
 
 import-to-project:
-	cp intellij/codestyles/* ${p}/.idea/codestyles && \
-	cp intellij/inspection/* ${p}/.idea/inspectionProfiles && \
-	cp intellij/copyright/* ${p}/.idea/copyright
+	cp $(intellij_codestyles_dir)/* $(project_codestyles_dir) && \
+	cp $(intellij_inspection_dir)/* $(project_inspection_dir) && \
+	cp $(intellij_copyright_dir)/* $(project_copyright_dir)
 
-export-from-project:
-	cp ${p}/.idea/codestyles/* intellij/codestyles && \
-	cp ${p}/.idea/inspectionProfiles/* intellij/inspection && \
-	cp ${p}/.idea/copyright/* intellij/copyright 
+export-from-project:	
+	if test -d $(project_codestyles_dir); then cp $(project_codestyles_dir)/* $(intellij_codestyles_dir); fi && \
+	if test -d $(project_inspection_dir); then cp $(project_inspection_dir)/* $(intellij_inspection_dir); fi && \
+	if test -d $(project_copyright_dir); then cp $(project_copyright_dir)/* $(intellij_copyright_dir); fi
