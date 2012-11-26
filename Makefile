@@ -7,7 +7,7 @@ intellij_copyright_dir=intellij/copyright
 intellij_codestyles_home=~/.IntelliJIdea11/config/codestyles
 intellij_inspection_home=~/.IntelliJIdea11/config/inspection
 
-project_codestyles_dir=${p}/.idea/codestyles
+project_codestyles_file=${p}/.idea/codeStyleSettings.xml
 project_inspection_dir=${p}/.idea/inspectionProfiles
 project_copyright_dir=${p}/.idea/copyright
 
@@ -32,8 +32,9 @@ import-to-intellij:
 	cp $(intellij_inspection_dir)/* $(intellij_inspection_home)
 
 import-to-project:
-	cp $(intellij_codestyles_dir)/* $(project_codestyles_dir) && \
+	cp $(intellij_codestyles_dir)/Obiba.xml $(project_codestyles_file) && \
 	cp $(intellij_inspection_dir)/* $(project_inspection_dir) && \
+	mkdir -p $(project_copyright_dir) && \
 	cp $(intellij_copyright_dir)/* $(project_copyright_dir)
 
 export-from-project:	
