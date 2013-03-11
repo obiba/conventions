@@ -3,29 +3,29 @@
     xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
-  
+
   <description>
     Obiba PMD ruleset.
   </description>
 
   <rule ref="rulesets/java/codesize.xml/NcssMethodCount">
     <properties>
-      <property name="minimum" value="20" />
+      <property name="minimum" value="20"/>
     </properties>
   </rule>
-  
+
   <rule ref="rulesets/java/codesize.xml/ExcessiveParameterList">
     <properties>
-      <property name="minimum" value="7" />
+      <property name="minimum" value="7"/>
     </properties>
   </rule>
-  
+
   <rule ref="rulesets/java/design.xml/AvoidDeeplyNestedIfStmts">
     <properties>
-      <property name="problemDepth" value="3" />
+      <property name="problemDepth" value="3"/>
     </properties>
   </rule>
-  
-  <rule ref="rulesets/java/design.xml/AvoidReassigningParameters" />
+
+  <rule ref="rulesets/java/design.xml/AvoidReassigningParameters"/>
 
 </ruleset>
