@@ -7,6 +7,8 @@
   <description>
     Obiba PMD ruleset.
   </description>
+  
+  <exclude-pattern>.*/target/generated-sources/.*</exclude-pattern>  
 
   <rule ref="rulesets/java/codesize.xml/NcssMethodCount">
     <properties>
