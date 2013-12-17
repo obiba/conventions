@@ -12,7 +12,7 @@
 
   <rule ref="rulesets/java/codesize.xml/NcssMethodCount">
     <properties>
-      <property name="minimum" value="20"/>
+      <property name="minimum" value="21"/>
     </properties>
   </rule>
 
