@@ -83,13 +83,16 @@ Turn on firewall
 
 ### Git
 
+```
 git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
+```
 
 ### PHP
 
+**/etc/php5/apache2/php.ini**
+
 ```
-/etc/php5/apache2/php.ini
 memory_limit = 1024M
 max_execution_time = 60
 ```
