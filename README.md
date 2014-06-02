@@ -1,5 +1,8 @@
 # OBiBa code conventions
 
+## [Ubuntu 14.04 setup](https://github.com/obiba/conventions/tree/master/ubuntu)
+
+
 ## [IntelliJ IDEA](http://www.jetbrains.com/idea)
 
 ### Import settings
