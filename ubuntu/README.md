@@ -57,16 +57,17 @@ For example:
 
 ```
 # uncompress these archives to ~/programs
+/programs$ ls
 /programs$ ls idea-IU-135.690  maven-3.2.1  PhpStorm-133.982
 
 /programs$ ln -s maven-3.2.1 maven
-/programs$ sudo ln -s maven/bin/mvn /usr/bin/mvn
+/programs$ sudo ln -s ~/programs/maven/bin/mvn /usr/bin/mvn
 
 /programs$ ln -s idea-IU-135.690 idea
-/programs$ sudo ln -s idea/bin/idea.sh /usr/bin/idea.sh
+/programs$ sudo ln -s ~/programs/idea/bin/idea.sh /usr/bin/idea.sh
 
 /programs$ ln -s PhpStorm-133.982 PhpStorm
-/programs$ sudo ln -s PhpStorm/bin/phpstorm.sh /usr/bin/phpstorm.sh
+/programs$ sudo ln -s ~/programs/PhpStorm/bin/phpstorm.sh /usr/bin/phpstorm.sh
 ```
 
 
@@ -74,7 +75,7 @@ For example:
 
 ### SSD
 
-For SSD disk (https://sites.google.com/site/easylinuxtipsproject/ssd#TOC-After-the-installation:-noatime)
+For SSD disk ([https://sites.google.com/site/easylinuxtipsproject/ssd#TOC-After-the-installation:-noatime](https://sites.google.com/site/easylinuxtipsproject/ssd#TOC-After-the-installation:-noatime))
 
 ### Security
 
