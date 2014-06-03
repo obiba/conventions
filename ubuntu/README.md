@@ -34,7 +34,7 @@ pear channel-discover pear.drush.org
 pear install drush/drush
 
 # nodeJS modules
-npm install -g grunt-cli less connect uglify-js jshint bower
+npm install -g grunt-cli less connect uglify-js jshint bower yo
 
 # Configure Flash for Chromium
 apt-get install -y pepperflashplugin-nonfree
