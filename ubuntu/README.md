@@ -36,7 +36,7 @@ pear install drush/drush
 # nodeJS modules
 npm install -g grunt-cli less connect uglify-js jshint bower yo
 
-# we may be need to to that to be able to run grunt without sudo
+# we maybe need to to that to be able to run grunt without sudo
 # chown -R $USER /usr/local
 
 # Configure Flash for Chromium
