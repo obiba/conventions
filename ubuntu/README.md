@@ -1,4 +1,4 @@
-# Ubuntu 14.04
+# Xubuntu 14.04
 
 
 ## apt-get
