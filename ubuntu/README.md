@@ -55,6 +55,7 @@ apt-get upgrade
 * [idea](http://www.jetbrains.com/idea/download)
 * [phpstorm](http://www.jetbrains.com/phpstorm/download)
 * [maven3](http://maven.apache.org/download.cgi)
+* [robomongo](http://robomongo.org/download.html)
 
 For example:
 
