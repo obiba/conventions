@@ -123,8 +123,11 @@ max_execution_time = 60
 default-storage-engine=INNODB
 innodb_file_per_table
 
-default-character-set=utf8
-default-collation=utf8_bin
+# see http://askubuntu.com/questions/127264/cant-start-mysql-mysql-respawning-too-fast-stopped
+#default-character-set=utf8
+#default-collation=utf8_bin
+character_set_server=utf8
+collation_server=utf8_bin
 
 max_allowed_packet=1G
 ```
