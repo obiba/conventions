@@ -1,4 +1,4 @@
-# Ubuntu 14.04
+# Xubuntu 14.04
 
 
 ## apt-get
@@ -20,7 +20,7 @@ sh -c 'echo "deb http://archive.canonical.com/ trusty partner" >> /etc/apt/sourc
 
 apt-get update
 
-apt-get install -y mongodb-org oracle-java7-installer oracle-java8-installer nodejs openssh-server vim git zip bzip2 fontconfig curl make python-software-properties apache2 mysql-server php5 libapache2-mod-php5 libapache2-mod-auth-mysql php5-mysql php5-gd php5-curl php5-dev php-pear git subversion chromium-browser libreoffice meld virtualbox vim sublime-text-installer mysql-workbench filezilla synaptic ubuntu-restricted-extras nautilus-dropbox libcurl4-openssl-dev libxml2-dev r-base keepassx
+apt-get install -y mongodb-org oracle-java7-installer oracle-java8-installer nodejs openssh-server vim git zip bzip2 fontconfig curl make python-software-properties apache2 mysql-server php5 libapache2-mod-php5 libapache2-mod-auth-mysql php5-mysql php5-gd php5-curl php5-dev php-pear git subversion chromium-browser libreoffice meld virtualbox vim sublime-text-installer mysql-workbench filezilla synaptic ubuntu-restricted-extras nautilus-dropbox libcurl4-openssl-dev libxml2-dev r-base keepassx cups-pdf devscripts daemon
 
 # config Apache2
 a2enmod php5
@@ -34,7 +34,10 @@ pear channel-discover pear.drush.org
 pear install drush/drush
 
 # nodeJS modules
-npm install -g grunt-cli less connect uglify-js jshint bower
+npm install -g grunt-cli less connect uglify-js jshint bower yo
+
+# we maybe need to to that to be able to run grunt without sudo
+# chown -R $USER /usr/local
 
 # Configure Flash for Chromium
 apt-get install -y pepperflashplugin-nonfree
@@ -52,6 +55,7 @@ apt-get upgrade
 * [idea](http://www.jetbrains.com/idea/download)
 * [phpstorm](http://www.jetbrains.com/phpstorm/download)
 * [maven3](http://maven.apache.org/download.cgi)
+* [robomongo](http://robomongo.org/download.html)
 
 For example:
 
@@ -119,8 +123,11 @@ max_execution_time = 60
 default-storage-engine=INNODB
 innodb_file_per_table
 
-default-character-set=utf8
-default-collation=utf8_bin
+# see http://askubuntu.com/questions/127264/cant-start-mysql-mysql-respawning-too-fast-stopped
+#default-character-set=utf8
+#default-collation=utf8_bin
+character_set_server=utf8
+collation_server=utf8_bin
 
 max_allowed_packet=1G
 ```
