@@ -38,6 +38,9 @@ pear channel-discover pear.drush.org
 pear install drush/drush
 
 # nodeJS modules
+curl -sL https://deb.nodesource.com/setup | sudo bash -
+apt-get install -y nodejs
+npm install npm -g
 npm install -g grunt-cli less connect uglify-js jshint bower yo
 
 # we maybe need to to that to be able to run grunt without sudo
