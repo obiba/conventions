@@ -24,7 +24,12 @@ sh -c 'echo "deb http://archive.canonical.com/ trusty partner" >> /etc/apt/sourc
 
 apt-get update
 
-apt-get install -y mongodb-org oracle-java7-installer oracle-java8-installer nodejs openssh-server vim git zip bzip2 fontconfig curl make python-software-properties apache2 mysql-server php5 libapache2-mod-php5 libapache2-mod-auth-mysql php5-mysql php5-gd php5-curl php5-dev php-pear git subversion chromium-browser libreoffice meld virtualbox vim sublime-text-installer mysql-workbench filezilla synaptic ubuntu-restricted-extras nautilus-dropbox libcurl4-openssl-dev libxml2-dev r-base keepassx cups-pdf devscripts daemon
+apt-get install -y mongodb-org oracle-java7-installer oracle-java8-installer nodejs openssh-server vim git zip bzip2 fontconfig curl make python-software-properties apache2 mysql-server php5 libapache2-mod-php5 libapache2-mod-auth-mysql php5-mysql php5-gd php5-curl php5-dev php-pear git subversion chromium-browser libreoffice meld virtualbox vim sublime-text-installer mysql-workbench filezilla synaptic ubuntu-restricted-extras libcurl4-openssl-dev libxml2-dev r-base keepassx cups-pdf devscripts daemon
+
+# install ownCloud
+sudo sh -c "echo 'deb http://download.opensuse.org/repositories/isv:/ownCloud:/desktop/Ubuntu_14.04/ /' >> /etc/apt/sources.list.d/owncloud-client.list"
+sudo apt-get update
+sudo apt-get install owncloud-client
 
 # config Apache2
 a2enmod php5
