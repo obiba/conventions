@@ -8,10 +8,6 @@ sudo bash
 
 add-apt-repository -y ppa:webupd8team/java
 
-# https://github.com/joyent/node/wiki/installing-node.js-via-package-manager
-curl -sL https://deb.nodesource.com/setup | sudo bash -
-#add-apt-repository -y ppa:chris-lea/node.js
-
 add-apt-repository -y ppa:webupd8team/sublime-text-3
 
 apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
