@@ -63,6 +63,7 @@ apt-get upgrade
 * [phpstorm](http://www.jetbrains.com/phpstorm/download)
 * [maven3](http://maven.apache.org/download.cgi)
 * [robomongo](http://robomongo.org/download)
+* [owncloud-client](https://software.opensuse.org/download/package?project=isv:ownCloud:desktop&package=owncloud-client)
 
 For example:
 
