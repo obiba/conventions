@@ -74,6 +74,7 @@ apt-get upgrade
 * [maven3](http://maven.apache.org/download.cgi)
 * [robomongo](http://robomongo.org/download)
 * [owncloud-client](https://software.opensuse.org/download/package?project=isv:ownCloud:desktop&package=owncloud-client)
+* [slack](https://slack.com/downloads)
 
 For example:
 
