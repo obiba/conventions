@@ -72,6 +72,8 @@ apt-get upgrade
 * [rstudio](https://www.rstudio.com/products/rstudio/)
 * [owncloud-client](https://software.opensuse.org/download/package?project=isv:ownCloud:desktop&package=owncloud-client)
 * [slack](https://slack.com/downloads)
+* [docker-engine](https://docs.docker.com/engine/installation/linux/ubuntulinux/)
+* [docker-compose](https://docs.docker.com/compose/install/)
 
 For example:
 
