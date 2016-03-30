@@ -45,8 +45,7 @@ php composer-setup.php
 php -r "unlink('composer-setup.php');"
 mv composer.phar /usr/local/bin/composer
 
-# Drush
-composer global require drush/drush:7.1.0
+# Drush follow steps here http://docs.drush.org/en/master/install-alternative/
 
 # nodeJS modules
 curl -sL https://deb.nodesource.com/setup | sudo bash -
