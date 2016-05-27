@@ -44,7 +44,7 @@ mv composer.phar /usr/local/bin/composer
 # Drush follow steps here http://docs.drush.org/en/master/install-alternative/
 
 # nodeJS modules
-curl -sL https://deb.nodesource.com/setup | sudo bash -
+curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 apt-get install -y nodejs
 npm install npm -g
 npm install -g grunt-cli less connect uglify-js jshint bower yo
